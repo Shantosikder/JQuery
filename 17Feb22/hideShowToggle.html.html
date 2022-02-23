@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery.min.js"></script> <!---CDN---->
+    <title>File Show Hide Toggle</title>
+</head>
+<body>
+
+    <h1>This is a heading show hide</h1>
+
+    <p>Lorem ipsum, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla enim ex, reprehenderit quo facere quidem. Autem ducimus vitae dicta cumque sit aut tenetur, accusantium totam necessitatibus? Itaque facere nobis accusantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi sit ex eveniet et incidunt, laboriosam non ea facilis commodi! Laboriosam, repudiandae! Culpa illum, voluptatem mollitia sunt sint at tempore perspiciatis!Lorem dolor sit amet consectetur adipisicing elit. Rem repellendus repellat sapiente omnis incidunt. Ratione obcaecati sequi odit saepe consequatur! Dolores asperiores soluta voluptatem nobis ipsam corrupti molestiae rem fugit?</p>
+
+    <button id="btn1">hide</button>
+    <button id="btn2">Show</button>
+    <button id="btn3">Toggle</button>
+
+
+    <script>
+
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    $("p").hide();
+  });
+});
+
+$(document).ready(function(){
+  $("#btn2").click(function(){
+    $("p").show();
+  });
+});
+
+$(document).ready(function(){
+  $("#btn3").click(function(){
+    $("p").toggle();
+  });
+});
+
+// $("#btn1").mouseenter(function(){
+//   alert("You file show hide");
+// });
+
+    </script>
+    
+</body>
+</html>
